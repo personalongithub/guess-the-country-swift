@@ -86,7 +86,7 @@ let countryDatabase = [
     ["Jamaica", "North America", "Kingston"],
     ["Japan", "Asia", "Tokyo"],
     ["Jordan", "Asia", "Amman"],
-    ["Kazakhstan", "Europe and Asia", "Nur-Sultan"],
+    ["Kazakhstan", "Europe and Asia", "Astana"],
     ["Kenya", "Africa", "Nairobi"],
     ["Kiribati", "Oceania", "South Tarawa"],
     ["North Korea", "Asia", "P’yŏngyang"],
@@ -203,8 +203,8 @@ while true {
     print("Guess the country:", terminator: " ")
     let answer = readLine()
     if answer == countryDatabase[countryNumber][0] {
-        print("Correct! The answer is \(countryDatabase[countryNumber][0])."); break
-    } else {
-        print("Incorrect! Please try again.")
+        print("Correct! The answer is \(countryDatabase[countryNumber][0]).")
+        break
     }
+    print("Incorrect! Please try again.")
 }
